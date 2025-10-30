@@ -5,18 +5,20 @@ Le PGCD (Plus Grand Commun Diviseur) de deux nombres est le plus grand nombre en
             
      int main() {
       int N, L, X;
-    //  Lecture des deux nombres
+    // Étape1: Lecture des deux nombres
     printf("Entrez deux nombres entiers : ");
     scanf("%d %d", &N, &L);
 
-    //  Tant que L n'est pas nul
+    // Étape2:on utilise la boucle  Tant que  pour vérifier que L n'est pas nul
+
     while (L != 0) {
-        X = L;      // Gardons la valeur de L
-        L = N % L;     // L devient le reste de N divisé par L
-        N = X;      // N prend l’ancienne valeur de L
+        X = L;      // Étape 3: Gardons la valeur de L
+
+        L = N % L;     // Étape 4:L devient le reste de N divisé par L
+        N = X;      // Étape5 N prend l’ancienne valeur de L
     }
 
-    //   Affichage du résultat
+    //Étape 6:  Affichage du résultat
 
     printf("Le PGCD est : %d\n", N);
 
