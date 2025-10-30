@@ -19,10 +19,8 @@ Le PGCD (Plus Grand Commun Diviseur) de deux nombres est le plus grand nombre en
         L = N % L;     // Étape 4:L devient le reste de N divisé par L
         N = X;      // Étape5 N prend l’ancienne valeur de L
     }
-      if(N=1){
-
+      if(N=1)
   printf ("les deux entières sont.   premières entre eux") //Étape 6: en utilisant la boucle 'for' on donne le résultat d'opération en cas où le PGCD vaut 1
-
     //Étape 7:  Affichage du résultat
 
     printf("Le PGCD est : %d\n", N);
